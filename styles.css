@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Kumbh Sans", sans-serif;
+   
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: 
+    url('images/bg-pattern-top.svg'), 
+    url('images/bg-pattern-bottom.svg'), 
+    linear-gradient(to bottom, hsl(185, 75%, 39%), hsl(229, 23%, 23%));
+background-repeat: no-repeat, no-repeat;
+background-position: top -260px left, bottom -336px right, 0 0;
+background-size: contain, contain, cover;
+
+}
+section{
+  background: white;
+  border-radius: 10px;
+    max-width: 360px;
+    overflow: hidden;
+   
+}
+section .head{
+    background-image: url(images/bg-pattern-card.svg);
+    width: 100%;
+    height:120px;
+}
+section img{
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: -50px;
+right: 35%;
+}
+section .txt{
+    padding: 50px 40px 20px 40px;
+    position: relative;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+section .txt p{
+    font-weight: 700;
+}
+section span{
+    font-weight: 400;
+ color:hsl(0, 0%, 59%);
+ 
+}
+
+/* hr{
+position: absolute;
+    border: none;
+    border-top: 
+    margin: 40px 0 0 0; 
+    padding: 0;
+    width: 100%;
+} */
+section .row{
+  
+    
+    display: flex;
+    gap: 30px;
+  
+    padding: 20px 40px;
+}
+section .row span{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+@media screen and (max-width: 376px) {
+    body {  
+        background-position: top -89px left -226px, bottom -109px right -190px, 0 0;
+    }
+}
